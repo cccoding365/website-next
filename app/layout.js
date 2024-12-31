@@ -1,6 +1,6 @@
+import Footer from "./components/layouts/footer";
+import Header from "./components/layouts/header";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 export const metadata = {
   title: "DoubledConG | 何聪聪",
@@ -11,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Header></Header>
+        {children}
+        <Footer></Footer>
       </body>
     </html>
   );

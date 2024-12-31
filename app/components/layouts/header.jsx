@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { CoolMode } from "@/components/ui/cool-mode";
-import SparklesText from "@/components/ui/sparkles-text";
 
 export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -26,11 +24,9 @@ export default function Header() {
 			<nav className="container mx-auto px-4 py-4">
 				<ul className="flex items-center gap-4">
 					<li className="mr-auto">
-						<CoolMode>
-							<Link href="/" className="text-2xl font-bold">
-								DoubledConG
-							</Link>
-						</CoolMode>
+						<Link href="/" className="text-2xl font-bold">
+							DoubledConG
+						</Link>
 					</li>
 					<li className="hidden md:block">
 						<Link href="/about">关于</Link>
