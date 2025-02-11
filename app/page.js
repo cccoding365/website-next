@@ -2,6 +2,7 @@
 
 import { Responsive, WidthProvider } from "react-grid-layout";
 import PersonalInfoCard from "./components/personal-info-card";
+import ClockCard from "./components/clock-card";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -47,13 +48,17 @@ function FeatureGrid() {
     <ResponsiveGridLayout
       className="layout"
       layouts={layouts}
+      isResizable={false}
+      isDraggable={false}
       breakpoints={{ lg: 1536, md: 1280, sm: 1024, xs: 768, xxs: 0 }}
       cols={{ lg: 12, md: 12, sm: 12, xs: 8, xxs: 2 }}
     >
       <div key="1">
         <PersonalInfoCard />
       </div>
-      <div key="2" className=" flex justify-center items-center font-bold text-3xl bg-blue-50">2</div>
+      <div key="2">
+        <ClockCard />
+      </div>
       <div key="3" className=" flex justify-center items-center font-bold text-3xl bg-yellow-50">3</div>
       <div key="4" className=" flex justify-center items-center font-bold text-3xl bg-slate-50">4</div>
       <div key="5" className=" flex justify-center items-center font-bold text-3xl bg-orange-50">5</div>

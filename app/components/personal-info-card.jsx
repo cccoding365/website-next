@@ -6,7 +6,7 @@ import { Github, Twitter, Linkedin } from "lucide-react";
 const PersonalInfoCard = () => {
 	return (
 		<Card className="w-full h-full">
-			<CardContent className="flex flex-col items-center p-6">
+			<CardContent className="flex flex-col justify-center items-center p-6">
 				<Image
 					src="/avatar.jpg"
 					alt="Profile Picture"
